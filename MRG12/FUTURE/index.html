@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUTURE/PAST | ROBLOX EDITION</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="game-body">
+    <div id="launcher">
+        <div class="launcher-content">
+            <h1 class="loader-title">JOINING SERVER...</h1>
+            <div class="loader-bar-container">
+                <div id="loader-progress"></div>
+            </div>
+            <p id="loader-status">REQUESTING ASSETS...</p>
+        </div>
+    </div>
+
+    <div id="binary-overlay"></div>
+    <img id="scene-image" src="" class="fade-in">
+
+    <div id="start-screen" style="display: none;">
+        <div id="menu-gui">
+            <div id="compass-holder">
+                <div id="rotating-compass"></div>
+                <button id="play-btn" onclick="startGame()">PLAY</button>
+            </div>
+            <h1 id="game-title">FUTURE / PAST</h1>
+        </div>
+    </div>
+
+    <div id="game-window" style="display: none;">
+        <div id="roblox-hud">
+            <div id="stats-bar">
+                <div id="loc-display">LOCATION: UNKNOWN</div>
+                <div id="lives-container">HP: <span id="lives-display"></span></div>
+            </div>
+            <div id="dialogue-frame">
+                <p id="text-output"></p>
+                <div id="choice-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
